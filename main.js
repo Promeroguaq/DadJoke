@@ -9,7 +9,7 @@ async function generarChiste(){
             "Accept": "application/json"
         }
     })
-    const data = res.json()
+    const data = await res.json()
     chistes.innerText = data.joke
     console.log(data)
 }
